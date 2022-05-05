@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <title>{% block title %} {% endblock %}</title>
+  </head>
+  <body>
+    <footer>
+      <div class="wrapper">
+
+        <div class="top">
+        </div>
+
+        <ul class="navigation">
+          <li><a href="{{ url_for('index')}}" title="Главная">Главная</a></li>
+          <li><a href="{{ url_for('index3')}}" title="Рекомендую">Рекомендую</a></li>
+          <li><a href="" title="Portfolio">Portfolio</a>
+            <ul>
+              <li><a href="" title="Websites">Websites</a></li>
+              <li><a href="" title="Webshops">Webshops</a></li>
+              <li><a href="" title="SEO">SEO</a></li>
+              <li><a href="" title="Responsive webdesign">Responsive webdesign</a></li>
+            </ul>
+          </li>
+        <li><a href="{{ url_for('index2')}}" title="Контакты">Контакты</a></li>
+          <div class="clear"></div>
+        </ul>
+
+  <div class="footer">
+    {% block content %} {% endblock %}
+  </div>
+      </div>
+
+  </footer>
+
+    <div class="wrapper" id="content">
+
+    </div>
+
+
+  </body>
+</html>

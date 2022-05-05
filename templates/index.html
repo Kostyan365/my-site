@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Добро пожаловать на мой блог посвященный воркауту {% endblock %}</h1>
+    <p>Для тех кто не в теме, Воркаут - это круто!</p>
+    <hr>
+    <div>
+        <img src="{{ url_for('static', filename= 'img/kostya.jpg') }}" alt="моя команда" width=500px align="left">
+        <div class="me">
+            <p>Меня зовут Константин, и я более трех лет занимаюсь уличным воркаутом. В этом блоге я хотел, показать некоторые элементы, и познакомить вас подробнее с данным видом легкой атлетики.</p>
+        </div>
+
+    </div>
+
+    <p align="left">hytejhytkj</p>
+{% endblock %}
